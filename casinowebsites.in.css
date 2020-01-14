@@ -1,0 +1,29 @@
+/* Makes Logo Smoother */
+#logo {
+  -webkit-transform: initial;
+}
+
+/* Button Stylings */
+.primary-cta {
+  background-color: rgba(103, 202, 142, 1);
+}
+
+.primary-cta:hover {
+  background-color: rgba(103, 202, 142, 0.8) !important;
+}
+
+.secondary-cta {
+  background-color: rgba(217, 156, 84, 1);
+}
+
+.secondary-cta:hover {
+  background-color: rgba(217, 156, 84, 0.8) !important;
+}
+
+.default-cta {
+  background-color: rgba(128, 128, 128, 1);
+}
+
+.default-cta:hover {
+  background-color: rgba(128, 128, 128, 0.8) !important;
+}
