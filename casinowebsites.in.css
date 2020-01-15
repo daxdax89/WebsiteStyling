@@ -27,3 +27,23 @@
 .default-cta:hover {
   background-color: rgba(128, 128, 128, 0.8) !important;
 }
+
+/* Button Stylings */
+.casino-list {
+}
+
+/* Default color */
+.casino-list:child {
+}
+
+/* Gold color */
+.casino-list:nth-child(0) {
+}
+
+/* Silver color */
+.casino-list:nth-child(1) {
+}
+
+/* Bronze color */
+.casino-list:nth-child(2) {
+}
