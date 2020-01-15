@@ -1,9 +1,15 @@
-/* Makes Logo Smoother */
-#logo {
-  -webkit-transform: initial;
+/***** Global variables *****/
+
+:root {
+  /* Color variables */
+  --gold: gold;
+  --silver: silver;
+  --bronze: bronze;
+  --primary: #000;
+  --secondary: #000;
 }
 
-/* Button Stylings */
+/***** Button Styling *****/
 .primary-cta {
   background-color: rgba(103, 202, 142, 1);
 }
@@ -28,7 +34,8 @@
   background-color: rgba(128, 128, 128, 0.8) !important;
 }
 
-/* Button Stylings */
+/***** List Styling *****/
+
 .casino-list {
 }
 
@@ -46,4 +53,10 @@
 
 /* Bronze color */
 .casino-list:nth-child(2) {
+}
+
+/* Makes Logo Smoother */
+
+#logo {
+  -webkit-transform: initial;
 }
