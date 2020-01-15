@@ -5,17 +5,18 @@
   --gold: gold;
   --silver: silver;
   --bronze: bronze;
-  --primary: #000;
-  --secondary: #000;
+  --primary: rgba(103, 202, 142, 1);
+  --secondary: rgba(217, 156, 84, 1);
 }
 
 /***** Button Styling *****/
 .primary-cta {
-  background-color: rgba(103, 202, 142, 1);
+  background-color: var(--primary);
 }
 
 .primary-cta:hover {
   background-color: rgba(103, 202, 142, 0.8) !important;
+  opacity: 0.8;
 }
 
 .secondary-cta {
@@ -54,6 +55,15 @@
 /* Bronze color */
 .casino-list:nth-child(2) {
 }
+
+/* Casino review offer styling */
+.casino-list .casino-review h3 {
+  color: var(--secondary);
+}
+
+/***** F.A.Q Styling *****/
+
+/***** Terms & Conditions Styling *****/
 
 /* Makes Logo Smoother */
 
