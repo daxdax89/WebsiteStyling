@@ -32,28 +32,73 @@ secondary: rgba(217, 156, 84, 1);
   background-color: rgba(128, 128, 128, 0.8) !important;
 }
 
-/***** List Styling *****/
+/* Casino list styling */
 
-/* Default color */
-
-/* Gold color
-.casino-list:nth-child(0) {
+.casino-list .casino-review .et_pb_image_wrap {
+  border-color: lightgray !important;
 }
 
-/* Silver color */
-/* .casino-list:nth-child(1) {
-} */
+.casino-list .casino-review:nth-child(2) .et_pb_image_wrap {
+  border-color: gold !important;
+}
 
-/* Bronze color */
-/* .casino-list:nth-child(2) {
-}  */
+.casino-list .casino-review:nth-child(3) .et_pb_image_wrap {
+  border-color: silver !important;
+}
 
-/***** F.A.Q Styling *****/
+.casino-list .casino-review:nth-child(4) .et_pb_image_wrap {
+  border-color: #cd7f32 !important;
+}
 
-/***** Terms & Conditions Styling *****/
+/* wobble button animation/ */
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-/* Makes Logo Smoother */
-
-#logo {
-  -webkit-transform: initial;
+.wobble:after {
+  -webkit-animation: flickerAnimation 1s infinite;
+  -moz-animation: flickerAnimation 1s infinite;
+  -o-animation: flickerAnimation 1s infinite;
+  animation: flickerAnimation 1s infinite;
 }
