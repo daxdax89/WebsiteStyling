@@ -1,12 +1,3 @@
-/* Color variables */
-/*
-gold: gold;
-silver: silver;
-bronze: bronze;
-primary: rgba(103, 202, 142, 1);
-secondary: rgba(217, 156, 84, 1); 
-*/
-
 /***** Button Styling *****/
 .primary-cta {
   background-color: rgba(103, 202, 142, 1);
@@ -101,4 +92,50 @@ secondary: rgba(217, 156, 84, 1);
   -moz-animation: flickerAnimation 1s infinite;
   -o-animation: flickerAnimation 1s infinite;
   animation: flickerAnimation 1s infinite;
+}
+
+/* Making review bar sticky */
+
+.make-it-sticky {
+  position: fixed;
+  top: 55px;
+  bottom: auto;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Styles */
+
+@media all and (min-width: 1405px) {
+}
+/*** Responsive Styles Standard Desktop Only ***/
+@media all and (min-width: 1100px) and (max-width: 1405px) {
+}
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {
+}
+/*** Responsive Styles Tablet Only ***/
+@media all and (min-width: 768px) and (max-width: 980px) {
+}
+/*** Responsive Styles Smartphone Only ***/
+@media all and (max-width: 767px) {
+  .make-it-sticky {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    z-index: 999 !important;
+    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  }
+  #sticky-bar-review .et_pb_row .et_pb_column {
+    display: none;
+  }
+
+  #sticky-bar-review .et_pb_row .et_pb_column:nth-child(6) {
+    display: unset;
+  }
+}
+/*** Responsive Styles Smartphone Portrait ***/
+@media all and (max-width: 479px) {
 }
