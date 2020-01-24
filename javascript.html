@@ -1,0 +1,49 @@
+<!-- // Implement Font Awesome -->
+<script src="https://kit.fontawesome.com/4631a05314.js" crossorigin="anonymous"></script>
+
+<!-- Sticky Bar Casino Review Code -->
+
+<script>
+    window.onscroll = function () {
+        console.log(window.pageYOffset);
+        var stickBar = document.getElementById("sticky-bar-review");
+        if (window.pageYOffset > 792) {
+            stickBar.classList.add("make-it-sticky");
+            console.log('Dodao sam klasu');
+        } else {
+            stickBar.classList.remove("make-it-sticky");
+            console.log('Sklonio sam klasu');
+        }
+    }
+
+    function stickBarMobile(screenWidth) {
+        var screenWidth = window.matchMedia("(max-width:768px)")
+
+        if (screenWidth.matches) {
+            var stickBar = document.getElementById("sticky-bar-review");
+            stickBar.classList.add("make-it-sticky-mobile");
+            console.log('nalepio sam mobilnu klasu');
+
+        } else {
+            console.log('nije mobilni view');
+
+        }
+    }
+
+    stickBarMobile(screenWidth);
+    screenWidth.addListener(stickBarMobile)
+</script>
+<!-- 
+<script>
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            document.body.style.backgroundColor = "yellow";
+        } else {
+            document.body.style.backgroundColor = "pink";
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 700px)");
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+</script> -->
