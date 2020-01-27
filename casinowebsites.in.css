@@ -98,12 +98,37 @@
 
 .make-it-sticky {
   position: fixed;
-  top: 55px;
+  top: 54px;
   bottom: auto;
   width: 100%;
   z-index: 999;
   box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
 }
+
+/* Blog Styling */
+
+.et_pb_blog_grid .et_pb_post {
+  background-color: #fafafa;
+  border: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.post-content-inner {
+  height: 200px;
+}
+
+.more-link:hover {
+  background-color: rgba(0, 136, 82, 0.8) !important;
+}
+
+/* .post-content{
+	text-align:center !important;
+}
+
+.post-content p{
+	text-align:left;
+} */
 
 /* Mobile Styles */
 
