@@ -1,18 +1,18 @@
 /***** Button Styling *****/
 .primary-cta {
-  background-color: rgba(103, 202, 142, 1);
+  background-color: rgba(0, 136, 82, 1);
 }
 
 .primary-cta:hover {
-  background-color: rgba(103, 202, 142, 0.8) !important;
+  background-color: rgba(0, 136, 82, 0.8) !important;
 }
 
 .secondary-cta {
-  background-color: rgba(217, 156, 84, 1);
+  background-color: rgba(247, 168, 89, 1);
 }
 
 .secondary-cta:hover {
-  background-color: rgba(217, 156, 84, 0.8) !important;
+  background-color: rgba(247, 168, 89, 0.8) !important;
 }
 
 .default-cta {
@@ -119,16 +119,8 @@
 }
 
 .more-link:hover {
-  background-color: rgba(0, 136, 82, 0.8) !important;
+  background-color: rgba(247, 168, 89, 0.8) !important;
 }
-
-/* .post-content{
-	text-align:center !important;
-}
-
-.post-content p{
-	text-align:left;
-} */
 
 /* Mobile Styles */
 
