@@ -1,6 +1,6 @@
 <!-- FAQ -->
 
-<div class="accordion" itemscope itemtype="https://schema.org/FAQPage">
+<div itemscope itemtype="https://schema.org/FAQPage">
   <!-- Question 1 -->
   <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <input type="checkbox" name="panel" id="panel-1" />
@@ -11,7 +11,6 @@
       itemprop="acceptedAnswer"
       itemtype="https://schema.org/Answer"
     >
-      <h2 class="accordion__header">Answer</h2>
       <p class="accordion__body" itemprop="text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus
         at a cum saepe molestias modi illo facere ducimus voluptatibus
@@ -24,15 +23,14 @@
 
   <!-- Question 2 -->
   <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <input type="checkbox" name="panel" id="panel-1" />
-    <label for="panel-1" itemprop="name">✅ Question 2</label>
+    <input type="checkbox" name="panel" id="panel-2" />
+    <label for="panel-2" itemprop="name">✅ Question 2</label>
     <div
       class="accordion__content accordion__content--small"
       itemscope
       itemprop="acceptedAnswer"
       itemtype="https://schema.org/Answer"
     >
-      <h2 class="accordion__header">Answer</h2>
       <p class="accordion__body" itemprop="text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus
         at a cum saepe molestias modi illo facere ducimus voluptatibus
@@ -45,15 +43,14 @@
 
   <!-- Question 3 -->
   <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <input type="checkbox" name="panel" id="panel-1" />
-    <label for="panel-1" itemprop="name">✅ Question 3</label>
+    <input type="checkbox" name="panel" id="panel-3" />
+    <label for="panel-3" itemprop="name">✅ Question 3</label>
     <div
       class="accordion__content accordion__content--small"
       itemscope
       itemprop="acceptedAnswer"
       itemtype="https://schema.org/Answer"
     >
-      <h2 class="accordion__header">Answer</h2>
       <p class="accordion__body" itemprop="text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus
         at a cum saepe molestias modi illo facere ducimus voluptatibus
@@ -66,21 +63,26 @@
 
   <!-- Question 4 -->
   <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <input type="checkbox" name="panel" id="panel-1" />
-    <label for="panel-1" itemprop="name">✅ Question 4</label>
+    <input type="checkbox" name="panel" id="panel-4" />
+    <label for="panel-4" itemprop="name">✅ Question 4</label>
     <div
       class="accordion__content accordion__content--small"
       itemscope
       itemprop="acceptedAnswer"
       itemtype="https://schema.org/Answer"
     >
-      <h2 class="accordion__header">Answer</h2>
       <p class="accordion__body" itemprop="text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus
-        at a cum saepe molestias modi illo facere ducimus voluptatibus
-        praesentium deleniti fugiat ab error quia sit perspiciatis velit
-        necessitatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Lorem ipsum dolor sit amet.
+        LeoVegas casino offers its Indian players a cash bonus of up to ₹80,000.
+        It is split across the first three deposits as follows <br />
+        1st Deposit Bonus: 100% up to ₹20,000 <br />
+        2nd Deposit Bonus: 50% up to ₹20,000 <br />
+        3rd Deposit Bonus: 25% up to ₹40,000 <br />
+        Bonus details: <br />
+        Number of deposits: 3 <br />
+        Minimum deposit: ₹1000 <br />
+        Max bonus: ₹80,000 <br />
+        Wagering: 15x (Bonus) within 30 days <br />
+        Max bonus cashout: ₹100,000
       </p>
     </div>
   </div>
@@ -90,12 +92,7 @@
 <style>
   /* * Accordion */
   /* Basic Accordion Styles */
-  .accordion {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+
   .accordion input[name="panel"] {
     display: none;
   }
@@ -109,7 +106,7 @@
     color: #1a1a1a;
     font-weight: bold;
     cursor: pointer;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid #f7a859;
   }
   .accordion label:after {
     content: "+";
@@ -141,13 +138,12 @@
     color: #1a1a1a;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+    /* transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87); */
+    -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+    transition: height 1s;
     margin-bottom: 1%;
   }
-  /* .accordion .accordion__content:not(:last-of-type) {
-    box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.25), inset 4px 0 0 0 #1abc9c,
-      inset 0 3px 6px rgba(0, 0, 0, 0.75);
-  } */
+
   .accordion .accordion__content .accordion__header {
     padding: 0 2%;
   }
@@ -158,31 +154,12 @@
   }
   /* * Size Variations */
   input[name="panel"]:checked ~ .accordion__content.accordion__content--small {
-    height: 200px;
+    height: 150px;
   }
-  input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
+  /* input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
     height: 200px;
   }
   input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
-    height: 300px;
-  }
-
-  /*** Responsive Styles Large Desktop And Above ***/
-  @media all and (min-width: 1405px) {
-  }
-  /*** Responsive Styles Standard Desktop Only ***/
-  @media all and (min-width: 1100px) and (max-width: 1405px) {
-  }
-  /*** Responsive Styles Tablet And Below ***/
-  @media all and (max-width: 980px) {
-  }
-  /*** Responsive Styles Tablet Only ***/
-  @media all and (min-width: 768px) and (max-width: 980px) {
-  }
-  /*** Responsive Styles Smartphone Only ***/
-  @media all and (max-width: 767px) {
-  }
-  /*** Responsive Styles Smartphone Portrait ***/
-  @media all and (max-width: 479px) {
-  }
+    height: auto;
+  } */
 </style>
