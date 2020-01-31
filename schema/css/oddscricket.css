@@ -118,10 +118,6 @@
   height: 200px;
 }
 
-.more-link:hover {
-  background-color: rgba(247, 168, 89, 0.8) !important;
-}
-
 /* * Accordion */
 /* Basic Accordion Styles */
 
@@ -197,11 +193,11 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
 
 /* Payment Options Spriting */
 /* #paypal{
-      width:50px;
-      height:50px;
-          background:url('https://stagingcricket.neverstopmedia.com/wp-content/uploads/2020/01/pr.png') -2px -46px;
-      border-radius:16px;
-  } */
+	width:50px;
+	height:50px;
+		background:url('https://stagingcricket.neverstopmedia.com/wp-content/uploads/2020/01/pr.png') -2px -46px;
+	border-radius:16px;
+} */
 
 /* Review Banner Text Styling */
 .promo {
@@ -247,6 +243,22 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   list-style-type: circle;
   font-family: "FontAwesome";
   content: "\f00d";
+  margin: 0 5px 0 -15px;
+  color: #c1272d !important;
+}
+
+.list-icons-check ul li:before {
+  list-style-type: circle;
+  font-family: "FontAwesome";
+  content: "\f00c";
+  margin: 0 5px 0 -15px;
+  color: #008852;
+}
+
+.list-icons-chevron ul li:before {
+  list-style-type: circle;
+  font-family: "FontAwesome";
+  content: "\f054";
   margin: 0 5px 0 -15px;
   color: #008852;
 }
