@@ -4,6 +4,35 @@ p {
   font-weight: 400;
 }
 
+h2 {
+  border-bottom: 3px solid #008852;
+  margin-bottom: 2%;
+}
+
+h3 {
+  border-left: 3px solid #f7a859;
+  padding-left: 2%;
+  margin-bottom: 2%;
+}
+
+/* Sidebar Styling */
+
+.post-sidebar img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1%;
+}
+
+/* Mobile Menu */
+
+.et_mobile_menu {
+  border-top: 3px solid #f7a859;
+}
+
+.mobile_menu_bar_toggle:before {
+  color: #f7a859 !important;
+}
+
 /***** Button Styling *****/
 
 .primary-cta {
@@ -46,74 +75,6 @@ p {
 
 .casino-list .casino-review:nth-child(4) .et_pb_image_wrap {
   border-color: #cd7f32 !important;
-}
-
-/* wobble button animation/ */
-
-@keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.wobble:after {
-  -webkit-animation: flickerAnimation 1s infinite;
-  -moz-animation: flickerAnimation 1s infinite;
-  -o-animation: flickerAnimation 1s infinite;
-  animation: flickerAnimation 1s infinite;
-}
-
-/* Making review bar sticky */
-
-.make-it-sticky {
-  position: fixed;
-  top: 54px;
-  bottom: auto;
-  width: 100%;
-  z-index: 999;
-  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
 }
 
 /* Blog Styling */
@@ -262,12 +223,27 @@ input[name="panel"]:checked~.accordion__content.accordion__content--large {
   font-size: 16px;
 }
 
-.left-review {
+.review-blurb {
+  overflow: visible !important;
+}
+
+.review-text .left-review {
   color: white;
 }
 
-.right-review {
+.review-text .right-review {
   float: right;
+  color: white;
+}
+
+.review-blurb .review-promo {
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+.review-blurb .review-bonus {
+  color: #f7a859;
+  font-size: 30px;
 }
 
 /* Normal List Styling */
@@ -294,6 +270,90 @@ input[name="panel"]:checked~.accordion__content.accordion__content--large {
   content: '\f054';
   margin: 0 5px 0 -15px;
   color: #008852;
+}
+
+/* Sticky Bar Styling */
+
+#sticky-bar-review img {
+  margin-top: 1px;
+}
+
+.sticky-spins {
+  font-weight: bold;
+  color: #1a1a1a;
+  font-size: 30px;
+  margin-top: 30px !important;
+}
+
+.sticky-bonus {
+  color: #f7a859;
+  font-size: 50px;
+  margin-top: 33px;
+}
+
+.sticky-stars {
+  color: #f7a859;
+  font-size: 35px;
+  margin-top: 35px;
+}
+
+#sticky-bar-review .et_pb_text_inner {
+  text-align: left !important;
+}
+
+/* Top 4 Section Styling */
+
+.banner-star {
+  color: #ddbd62 !important;
+}
+
+.banner-rating {
+  color: white;
+  font-weight: bold;
+}
+
+.banner-promo {
+  font-weight: bold;
+  color: #1c1c1c;
+  font-size: 18px;
+}
+
+.banner-bonus {
+  color: #f7a859;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.banner-spins {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* Sidebar Styling */
+
+.list-icons-chevron {
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+
+.list-icons-chevron h4 {
+  background-color: #f7a859;
+  padding: 10px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+}
+
+.list-icons-chevron ul {
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Hiding Additionl Post Titles */
+
+.et_post_meta_wrapper {
+  display: none;
 }
 
 /* Mobile Styles */
