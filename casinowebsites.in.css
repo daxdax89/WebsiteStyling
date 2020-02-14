@@ -2,6 +2,24 @@
 p {
   font-weight: 400;
 }
+h2 {
+  /* 	border-bottom:3px solid #008852;
+	margin-bottom:2%; */
+}
+
+h3 {
+  /* 	border-left: 3px solid #f7a859;
+	padding-left: 2%;
+	margin-bottom: 2%; */
+}
+
+/* Sidebar Styling */
+
+.post-sidebar img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1%;
+}
 
 /* Mobile Menu */
 .et_mobile_menu {
@@ -55,70 +73,6 @@ p {
   border-color: #cd7f32 !important;
 }
 
-/* wobble button animation/ */
-@keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.wobble:after {
-  -webkit-animation: flickerAnimation 1s infinite;
-  -moz-animation: flickerAnimation 1s infinite;
-  -o-animation: flickerAnimation 1s infinite;
-  animation: flickerAnimation 1s infinite;
-}
-
-/* Making review bar sticky */
-
-/* .make-it-sticky {
-  position: fixed;
-  top: 54px;
-  bottom: auto;
-  width: 100%;
-  z-index: 999;
-  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
-}
- */
 /* Blog Styling */
 
 .et_pb_blog_grid .et_pb_post {
@@ -205,14 +159,6 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   height: 400px;
 }
 
-/* Payment Options Spriting */
-/* #paypal{
-	width:50px;
-	height:50px;
-		background:url('https://stagingcricket.neverstopmedia.com/wp-content/uploads/2020/01/pr.png') -2px -46px;
-	border-radius:16px;
-} */
-
 /* Review Banner Text Styling */
 .promo {
   font-weight: bold;
@@ -274,6 +220,37 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   font-size: 30px;
 }
 
+.review-schema-stars i {
+  color: #ddbd62;
+}
+
+.review-schema-stars {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.review-banner-promo {
+  font-weight: bold;
+  font-size: 30px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.review-banner-bonus {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 74px;
+  color: #f7a859;
+  line-height: 1.1em;
+  text-align: center;
+}
+.review-banner-spins {
+  font-weight: bold;
+  color: #1a1a1a;
+  line-height: 1.1em;
+  font-size: 30px;
+}
+
 /* Normal List Styling */
 
 .list-icons ul li:before {
@@ -320,12 +297,93 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
 
 .sticky-stars {
   color: #f7a859;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 35px;
 }
 
 #sticky-bar-review .et_pb_text_inner {
   text-align: left !important;
+}
+
+/* Top 4 Section Styling */
+.banner-title,
+.banner-none-title {
+  color: white !important;
+}
+
+.banner-star {
+  color: #ddbd62 !important;
+}
+
+.banner-rating {
+  color: white;
+  font-weight: bold;
+}
+
+.banner-promo {
+  font-weight: bold;
+  color: #1c1c1c;
+  font-size: 18px;
+  line-height: 1.2em !important;
+}
+
+.banner-bonus {
+  color: #f7a859;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.banner-spins {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.top4-stars i {
+  color: #ddbd62 !important;
+}
+
+.toc-star .et_pb_column_inner_1 {
+  width: 80% !important;
+}
+
+.toc-star .et_pb_column_inner_2 {
+  width: 15% !important;
+}
+
+/* Table of Content Spacing */
+.lwptoc {
+  margin: 0px !important;
+}
+
+.lwptoc_i {
+  padding: 0px !important;
+}
+
+/* Sidebar Styling */
+
+.list-icons-chevron {
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+
+.list-icons-chevron h4 {
+  background-color: #f7a859;
+  padding: 10px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+}
+
+.list-icons-chevron ul {
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Hiding Additionl Post Titles */
+
+.et_post_meta_wrapper {
+  display: none;
 }
 
 /* Mobile Styles */
@@ -343,6 +401,10 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
 }
 /*** Responsive Styles Smartphone Only ***/
 @media all and (max-width: 767px) {
+  /* 	h1{
+		font-size:20px !important;
+	} */
+
   .make-it-sticky {
     position: fixed;
     top: auto;
