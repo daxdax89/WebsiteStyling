@@ -1,0 +1,524 @@
+/* Global Styling */
+p {font-weight: 400;}
+
+.title-divider{
+	background-color:#f7a859;
+	width:100%;
+	height:3px;
+	border-top:0;
+	margin-top:0;
+}
+
+.schema-star{
+	color:#ddbd62;
+	font-size:20px;
+}
+
+.star-top4{
+	font-size:17px;
+}
+
+.list-star{
+	font-size:30px;
+}
+
+.list-star-text{
+	font-size:30px;
+		color:#1a1a1a;
+	font-weight:900;
+	line-height:1.2em;
+}
+
+/* Listicle Item Styling */
+
+.listicle-item .listicle-text-holder{
+	display:flex;
+	flex-direction:row;
+}
+
+.listicle-item .listicle-text-holder .inner-big{
+	width:70%;
+}
+
+.listicle-item .listicle-text-holder .inner-small{
+width:30%;
+}
+
+/* Game Providers Short */
+
+.game-provider-short .text-holder{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+
+/*** Joppes css code ***/
+.orange-text{
+	color:#f7a859;
+}
+.white-text{
+	color:#ffffff;
+}
+
+/* Sidebar Styling */
+
+.post-sidebar img{
+	width:100%;
+	border-radius:5px;
+	margin-bottom:1%;
+}
+
+/* Mobile Menu */
+.et_mobile_menu{
+	border-top:3px solid #f7a859;
+}
+
+.mobile_menu_bar_toggle:before{
+	color:#f7a859 !important;
+}
+
+/***** Button Styling *****/
+.primary-cta {
+  background-color: rgba(0,136,82, 1.0);
+}
+
+.primary-cta:hover {
+  background-color: rgba(0,136,82, 0.8) !important;
+}
+
+.secondary-cta {
+  background-color: rgba(247,168,89, 1.0);
+}
+
+.secondary-cta:hover {
+  background-color: rgba(247,168,89, 0.8) !important;
+}
+
+.default-cta {
+  background-color: rgba(128, 128, 128, 1);
+}
+
+.default-cta:hover {
+  background-color: rgba(128, 128, 128, 0.8) !important;
+}
+
+/* Casino list styling */
+.list-review-text{
+font-size:	16px;
+	text-transform:uppercase;
+	color:#7f7f7f;
+}
+
+.casino-list .casino-review .et_pb_image_wrap {
+  border-color: lightgray !important;
+}
+
+.casino-list .casino-review:nth-child(2) .et_pb_image_wrap {
+  border-color: gold !important;
+}
+
+.casino-list .casino-review:nth-child(3) .et_pb_image_wrap {
+  border-color: silver !important;
+}
+
+.casino-list .casino-review:nth-child(4) .et_pb_image_wrap {
+  border-color: #cd7f32 !important;
+}
+
+/* Slot Review Banner Styling */
+
+.slot-review-banner-name{
+    font-weight: bold;
+    font-size: 30px;
+    color: #1a1a1a;
+    text-align: center;
+	line-height:1.1em;
+}
+
+.slot-review-banner-promo{
+	font-weight: bold;
+    color: #1a1a1a;
+    line-height: 1.1em;
+    font-size: 30px;
+}
+
+.slot-review-banner-bonus{
+   font-weight: bold;
+    text-transform: uppercase;
+    font-size: 74px;
+    color: #f7a859;
+    line-height: 1.1em;
+    text-align: center;
+}
+
+/* Blog Styling */
+
+.et_pb_blog_grid .et_pb_post{
+	background-color:#fafafa;
+	border:0px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+.post-content-inner{
+	height:200px;
+}
+
+ /* * Accordion */
+  /* Basic Accordion Styles */
+
+  .accordion input[name="panel"] {
+    display: none;
+  }
+  .accordion label {
+    display: block;
+    padding: 10px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #fafafa;
+    font-size: 18px;
+    color: #1a1a1a;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid #f7a859;
+  }
+  .accordion label:after {
+    content: "+";
+    position: absolute;
+		font-size:30px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+			font-weight:normal;
+		line-height:30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    background: #008852;
+  }
+  .accordion label:hover {
+    color: #008852;
+  }
+  .accordion input:checked + label {
+    color: #008852;
+  }
+  .accordion input:checked + label:after {
+    content: "-";
+    /* adjsut line-height to vertically center icon */
+    line-height: 0.8em;
+  }
+  .accordion .accordion__content {
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    background: #fafafa;
+    color: #1a1a1a;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+    transition: height 1s;
+    margin-bottom: 1%;
+  }
+
+  .accordion .accordion__content .accordion__body {
+    font-size: 16px;
+    line-height: 1.6em;
+    padding: 2%;
+  }
+
+  /* * Size Variations */
+
+  input[name="panel"]:checked ~ .accordion__content.accordion__content--extrasmall {
+    height: 100px;
+  }
+
+  input[name="panel"]:checked ~ .accordion__content.accordion__content--small {
+    height: 150px;
+  }
+
+  input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
+    height: 200px;
+  }
+  input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
+    height: 400px;
+  }
+  input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
+    height: 450px;
+  }
+
+/* Review Banner Text Styling */
+.promo{
+	font-weight: bold;
+  line-height: 1.1em;
+  font-size: 15px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.bonus{
+	font-weight: bold;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #f7a859;
+  line-height: 1.1em;
+  text-align: center;
+}
+
+.bonus-mini{
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:35px;
+	color:#f7a859;
+	line-height:1.1em;
+	text-align:center;
+}
+
+.tc{
+	color:#7f7f7f;
+}
+
+.spins{
+	font-weight: bold;
+  color: #1a1a1a;
+  line-height: 1.1em;
+  font-size: 16px;
+}
+
+.review-blurb{
+	overflow:visible !important;
+}
+
+.review-text .left-review{
+	color:white;
+}
+
+.review-text .right-review{
+	float:right;
+	color:white;
+}
+
+.review-blurb .review-promo{
+	font-size:15px;
+	color:#1a1a1a;
+}
+
+.review-blurb .review-bonus{
+	color:#f7a859;
+	font-size:30px;
+}
+
+.review-schema-stars i{
+	color:#ddbd62;
+}
+
+.review-schema-stars{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.review-banner-promo{
+	font-weight: bold;
+  font-size: 30px;
+  color: #1a1a1a;
+  text-align: center;
+	
+}
+
+.review-banner-bonus{
+	font-weight: bold;
+  text-transform: uppercase;
+  font-size: 74px;
+  color: #f7a859;
+  line-height: 1.1em;
+  text-align: center;
+}
+.review-banner-spins{
+	font-weight: bold;
+  color: #1a1a1a;
+  line-height: 1.1em;
+  font-size: 30px;
+}
+
+/* Normal List Styling */
+.list-icons-check ul li{
+	font-weight:400 !important;
+}
+
+.list-icons-check ul{
+	margin-left:20px;
+}
+
+.list-icons ul li:before{
+list-style-type:circle;
+	content:'\2717';
+    margin:0 5px 0 -15px;
+    color: #c1272d !important;
+
+}
+
+.list-icons-check ul li:before{
+list-style-type:circle;
+	content:'\2713';
+    margin:0 5px 0 -15px;
+    color: #008852;
+font-size:16px;
+}
+
+.list-icons-chevron ul li:before{
+list-style-type:circle;
+		content:'\2BC8';
+    margin:0 5px 0 -15px;
+    color: #008852;
+height:16px !important;
+
+}
+
+/* Sticky Bar Styling */
+
+.sticky-text{
+	font-size:20px;
+	text-transform:uppercase;
+	color:#f7a859;
+	text-align:center;
+	font-weight:bold;
+}
+
+.sticky-promo{
+	font-size:20px;
+	color:#1a1a1a;
+}
+
+.sticky-spins{
+	color:#1a1a1a;
+	font-size:20px !important;
+	text-align:center;
+}
+
+.sticky-bonus{
+	color:#1a1a1a !important;
+	font-size:20px !important;
+	text-align:center;
+}
+
+/* Top 4 Section Styling */
+.banner-title, .banner-none-title{
+	color:white !important;
+}
+
+.banner-star{
+	color:#ddbd62 !important;
+}
+
+.banner-rating{
+	color:white;
+	font-weight:bold;
+}
+
+.banner-promo{
+	font-weight:bold;
+	color:#1c1c1c;
+	font-size:18px;
+	line-height:1.2em !important;
+}
+
+.banner-bonus{
+	color:#f7a859;
+	font-size:40px;
+	font-weight:bold;
+}
+
+.banner-spins{
+	font-weight:bold;
+	font-size:18px;
+}
+
+.top4-stars i{
+	color:#ddbd62 !important;
+}
+
+.toc-star .et_pb_column_inner_1{
+	width:80% !important;
+}
+
+
+.toc-star .et_pb_column_inner_2{
+	width:15% !important;
+}
+
+/* Table of Content Spacing */
+.lwptoc{
+	margin:0px !important;
+}
+
+.lwptoc_i{
+	padding:0px !important
+}
+
+/* Casino Game Read More */
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+.more:after{
+}
+
+.less:after{
+}
+
+.more{
+	text-align:center;
+}
+
+.less{
+	text-align:center;
+}
+
+/* Sidebar Styling */
+
+.list-icons-chevron h4{
+	background-color:#f7a859;
+	padding: 10px 20px;
+  border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: white;
+}
+
+.list-icons-chevron ul {
+	margin-left:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.list-icons-chevron ul li{
+	font-weight:400 !important;
+}
+
+/* Hiding Additionl Post Titles */
+
+.et_post_meta_wrapper{
+	display:none;
+}
+
+/* Mobile Styles */
+
+@media all and (min-width: 1405px) {
+}
+/*** Responsive Styles Standard Desktop Only ***/
+@media all and (min-width: 1100px) and (max-width: 1405px) {
+}
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {
+}
+/*** Responsive Styles Tablet Only ***/
+@media all and (min-width: 768px) and (max-width: 980px) {
+}
+/*** Responsive Styles Smartphone Only ***/
+@media all and (max-width: 767px) {
+
+}
+/*** Responsive Styles Smartphone Portrait ***/
+@media all and (max-width: 479px) {
+}
