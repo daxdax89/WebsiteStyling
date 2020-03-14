@@ -16,14 +16,6 @@ p {
   font-size: 20px;
 }
 
-.star-top4 {
-  font-size: 17px;
-}
-
-.list-star {
-  font-size: 30px;
-}
-
 .list-star-text {
   font-size: 30px;
   color: #1a1a1a;
@@ -45,6 +37,104 @@ p {
   width: 100%;
   border-radius: 5px;
   margin-bottom: 1%;
+}
+
+/* Casino of the Month Sticky Bar Styling */
+
+.sticky-text p {
+  color: #1b75bc;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sticky-text span {
+  color: black;
+}
+
+.com-mobile-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.com-sticky-logo {
+  padding-top: 12px;
+  margin: auto;
+  background-color: #fafafa;
+  width: 40%;
+}
+
+.com-sticky-logo img {
+  margin: auto;
+  width: 100%;
+}
+
+.com-sticky-text {
+  background-color: #008852;
+  color: white;
+  width: 60%;
+}
+
+.sticky-casino-of-the-month-text {
+  text-transform: uppercase;
+}
+
+.sticky-casino-of-the-month-bonus {
+  font-weight: bold;
+}
+
+/* Casino list styling */
+
+.casino-review {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.list-toc-text {
+  color: grey;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.list-review-text {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white !important;
+  background-color: #1b75bc !important;
+  padding: 1% 2% !important;
+  border-radius: 5px;
+}
+
+.list-review-text:hover {
+  background-color: #ffde17 !important;
+  color: black !important;
+}
+
+.list-review-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 9px 0px !important;
+}
+
+.list-review-code .list-star-score {
+  line-height: 40px !important;
+  margin: 8px 0px !important;
+}
+
+.list-star {
+  font-size: 30px;
+  color: #ffde17;
+}
+
+.list-star-text {
+  font-size: 30px;
+  color: #35454c;
+  font-weight: 600;
+}
+
+.casino-list .casino-review .et_pb_image_wrap {
+  border-color: lightgray !important;
 }
 
 /* Mobile Menu */
@@ -214,8 +304,8 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 .bonus {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 40px;
-  color: #f7a859;
+  font-size: 35px;
+  color: #1b75bc;
   line-height: 1.1em;
   text-align: center;
 }
@@ -246,11 +336,22 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 
 .review-text .left-review {
   color: white;
+  font-size: 17px;
 }
 
 .review-text .right-review {
   float: right;
   color: white;
+}
+
+.right-review .banner-rating .list-star {
+  font-size: 20px;
+}
+
+.right-review .banner-rating .list-star-text {
+  color: white;
+  font-size: 20px;
+  margin-left: 5px;
 }
 
 .review-blurb .review-promo {
@@ -337,7 +438,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 .sticky-text {
   font-size: 20px;
   text-transform: uppercase;
-  color: #f7a859;
+  color: #1b75bc;
   text-align: center;
   font-weight: bold;
 }
@@ -382,7 +483,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 }
 
 .banner-bonus {
-  color: #f7a859;
+  color: #1b75bc;
   font-size: 40px;
   font-weight: bold;
 }
@@ -414,9 +515,6 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 }
 
 /* Sidebar Styling */
-
-.list-icons-chevron {
-}
 
 .list-icons-chevron h4 {
   background-color: #0f75bc;
