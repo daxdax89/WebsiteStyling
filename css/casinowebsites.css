@@ -23,6 +23,42 @@ sup{
 	font-weight:normal;
 }
 
+/* Menu Styling */
+
+#et_search_icon:hover, #top-menu li.current-menu-ancestor>a, #top-menu li.current-menu-item>a, .bottom-nav li.current-menu-item>a, .comment-reply-link, .entry-summary p.price ins, .et-social-icon a:hover, .et_password_protected_form .et_submit_button, .footer-widget h4, .form-submit .et_pb_button, .mobile_menu_bar:after, .mobile_menu_bar:before, .nav-single a, .posted_in a, .woocommerce #content div.product p.price, .woocommerce #content div.product span.price, .woocommerce #content input.button, .woocommerce #content input.button.alt, .woocommerce #content input.button.alt:hover, .woocommerce #content input.button:hover, .woocommerce #respond input#submit, .woocommerce #respond input#submit.alt, .woocommerce #respond input#submit.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce-page #content div.product p.price, .woocommerce-page #content div.product span.price, .woocommerce-page #content input.button, .woocommerce-page #content input.button.alt, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit, .woocommerce-page #respond input#submit.alt, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page .star-rating span:before, .woocommerce-page a.button, .woocommerce-page a.button.alt, .woocommerce-page a.button.alt:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button, .woocommerce-page button.button.alt, .woocommerce-page button.button.alt.disabled, .woocommerce-page button.button.alt.disabled:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page button.button:hover, .woocommerce-page div.product p.price, .woocommerce-page div.product span.price, .woocommerce-page input.button, .woocommerce-page input.button.alt, .woocommerce-page input.button.alt:hover, .woocommerce-page input.button:hover, .woocommerce .star-rating span:before, .woocommerce a.button, .woocommerce a.button.alt, .woocommerce a.button.alt:hover, .woocommerce a.button:hover, .woocommerce button.button, .woocommerce button.button.alt, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:hover, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce input.button, .woocommerce input.button.alt, .woocommerce input.button.alt:hover, .woocommerce input.button:hover, .wp-pagenavi a:hover, .wp-pagenavi span.current{
+	color:#f7a859;
+}
+
+
+ .logo_container{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+} 
+
+#logo{
+	margin-top:5px;
+	margin-right:70px;
+}
+
+.main-menu-item{
+	vertical-align:middle;
+align-self:center;
+	color:#35454c;
+	margin-right:20px;
+	font-size:20px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+#mobile-menu-main-items{
+	display:none;
+}
+
+.main-menu-item:hover, .mobile-main-menu-item:hover{
+	color:#f7a859;
+}
+
 /* Casino of the Month Sticky Bar Styling */
 
 .sticky-text p{
@@ -574,29 +610,91 @@ height:16px !important;
 }
 /*** Responsive Styles Standard Desktop Only ***/
 @media all and (min-width: 1100px) and (max-width: 1405px) {
+	.main-menu-item{
+		font-size:18px;
+		margin-right:15px;
+	}
+	
+	#logo{
+		margin-right:30px;
+	}
+	
 }
+
+/*** Responsive Styles Standard Desktop Only ***/
+@media all and (min-width: 981px) and (max-width: 1099px) {
+	.main-menu-item{
+		font-size:15px;
+		margin-right:10px
+	}
+	
+	#logo{
+		margin-right:30px;
+	}
+}
+
 /*** Responsive Styles Tablet And Below ***/
 @media all and (max-width: 980px) {
 }
 /*** Responsive Styles Tablet Only ***/
 @media all and (min-width: 768px) and (max-width: 980px) {
+		.main-menu-item{
+		font-size:14px;
+		margin-right:5px
+	}
+	
+	#logo{
+		margin-right:0px;
+		max-width:85% !important;
+		margin-top:20px;
+	}
 }
 /*** Responsive Styles Smartphone Only ***/
 @media all and (max-width: 767px) {
-/* Listicle Item Styling */
-/* 
-.listicle-item .listicle-text-holder{
-	flex-direction:column;
+.main-menu-item{
+		display:none;
+	}
+	
+	#logo{
+		margin-top:20px !important;
+		margin-right:0 !important;
+max-width:100% !important;
+	}
+	
+	.et_header_style_left .logo_container{
+		max-width:60%;
+	}
+	
+	#mobile-menu-main-items{
+	display:flex;
+		flex-direction:row;
+		justify-content:center;
+		background-color:#353599;
+}
+	
+	.mobile-main-menu-item{
+		color:white;
+		font-size:14px;
+		text-transform:uppercase;
+		font-weight:bold;
+		margin-right:5px;
+		text-align:center;
+		align-self:center;
+		line-height:1.1em;
+/* 		border-right:2px solid #f7a859; */
+		padding:5px;
+		vertical-align:middle;
+	}
+	
+.mobile-main-menu-item:nth-child(4){
+		border-right:0px;
+	}
+	
+	.mobile-menu-separator{
+		margin:0;
+			}
 }
 
-.listicle-item .listicle-text-holder .inner-big{
-	width:100%;
-}
-
-.listicle-item .listicle-text-holder .inner-small{
-width:100%;
-} */
-}
 /*** Responsive Styles Smartphone Portrait ***/
 @media all and (max-width: 479px) {
 }
