@@ -4,25 +4,28 @@ li {
   font-size: 1rem !important;
   font-weight: 400;
   /*   margin-top: 0; */
-  /*   margin-bottom: 1rem; */
-  color: #1a1a1a !important;
-  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  background-color: transparent;
 }
 
 h1 {
   font-size: 2.1rem !important;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 1.6rem !important;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.35rem !important;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 1.1rem !important;
+  font-weight: bold;
 }
 
 h5 {
@@ -77,8 +80,12 @@ sup {
   margin-top: 1%;
 }
 
-.cwtable-holder {
+table {
+  border: 1px lightgray;
+  border-top: 0;
   border-radius: 5px;
+  margin-bottom: 2%;
+  font-size: 1rem;
 }
 
 table th {
@@ -180,9 +187,23 @@ table th {
 
 /* Casino of the Month Sticky Bar Styling */
 
+#sticky-bar-review .et_pb_row_47 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#sticky-bar-review .et_pb_column {
+  align-self: center;
+}
+
+#sticky-bar-review .et_pb_row_47 .et_pb_module {
+  align-self: center;
+}
+
 .sticky-text p {
   font-weight: bold;
   color: #f98e58;
+  margin-bottom: 0;
 }
 
 .com-mobile-holder {
@@ -258,12 +279,13 @@ table th {
 .primary-cta-html {
   background-color: rgba(34, 181, 115, 1);
   border-radius: 5px;
-  border: 2px solid;
   font-weight: 500;
   line-height: 1.7em;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px !important;
   padding: 0.3em 1em;
+  color: white;
+  text-transform: uppercase;
 }
 
 .primary-cta:hover {
@@ -365,6 +387,10 @@ table th {
   align-self: center !important;
 }
 
+.casino-review p {
+  margin-bottom: 0;
+}
+
 .list-review-text {
   font-size: 16px;
   text-transform: uppercase;
@@ -380,8 +406,9 @@ table th {
 .list-review-text {
   color: white !important;
   background-color: #35454c !important;
-  padding: 1% 2% !important;
+  padding: 0.3em 1em !important;
   border-radius: 5px;
+  font-size: 0.8rem;
 }
 
 .list-review-text:hover {
@@ -395,7 +422,7 @@ table th {
 }
 
 .list-review-code .list-star-score {
-  line-height: 40px !important;
+  /*   line-height: 40px !important; */
 }
 
 .list-star {
@@ -404,7 +431,7 @@ table th {
 }
 
 .list-star-text {
-  font-size: 30px;
+  font-size: 25px;
   color: #35454c;
   font-weight: 600;
 }
@@ -744,6 +771,10 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
   height: 450px;
 }
 
+input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
+  height: 500px;
+}
+
 .accordion__content ul {
   list-style: none !important;
 }
@@ -751,7 +782,6 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 /* Review Banner Text Styling */
 .promo {
   font-weight: bold;
-  line-height: 1.1em;
   font-size: 18px;
   color: #1a1a1a;
   text-align: center;
@@ -760,9 +790,8 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 .bonus {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 2rem;
   color: #f98e58;
-  line-height: 1.1em;
   text-align: center;
 }
 
@@ -782,12 +811,18 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 .spins {
   font-weight: bold;
   color: #1a1a1a;
-  line-height: 1.1em;
   font-size: 18px;
 }
 
 .review-blurb {
   overflow: visible !important;
+}
+
+.review-text .et_pb_code_inner {
+  padding: 5px 15px;
+  background-color: #35454c;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .review-text .left-review {
@@ -841,7 +876,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 }
 
 .review-quick-facts {
-  background-color: black;
+  background-color: #f98e58;
 }
 
 /* Normal List Styling */
@@ -904,6 +939,11 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 }
 
 /* Top 4 Section Styling */
+
+.top4-section .et_pb_column .et_pb_image_wrap {
+  margin-bottom: -7px;
+}
+
 .banner-title,
 .banner-none-title {
   color: white !important;
@@ -922,13 +962,13 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
   font-weight: bold;
   color: #1c1c1c;
   font-size: 18px;
-  line-height: 1.2em !important;
 }
 
 .banner-bonus {
   color: #f98e58;
   font-size: 40px;
   font-weight: bold;
+  line-height: 1em !important;
 }
 
 .banner-spins {
@@ -1117,6 +1157,8 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
     margin: 0;
   }
 
+  /* 	Casino Review Mobile */
+
   .casino-review {
     margin-bottom: 30px !important;
   }
@@ -1125,7 +1167,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
     margin-bottom: 0 !important;
   }
 
-  .casino-review .et_pb_image {
+  .casino-review .et_pb_column:nth-child(1) .et_pb_image {
     margin-left: 0 !important;
   }
 
