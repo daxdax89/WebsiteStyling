@@ -1,144 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-
-<body>
-    <div class="casino-list-holder">
-        <ol>
-            <li>
-                <div><a href="">
-                        <img src="https://casinowebsites.in/wp-content/uploads/2020/02/Leovegas.jpg" alt="leo-vegas">
-                    </a>
-                </div>
-                <div>
-                    <span class="list-promo">100% up to</span><br>
-                    <span class="list-bonus">₹80,000</span><br>
-                    <span class="list-spins">Multiple Bonuses!</span>
-                </div>
-                <div>
-                    <span>⍟5.0</span><br>
-                    <span><a href="">Read Review</a></span><br>
-                    <span>18+, T&C applies</span><br>
-                </div>
-                <div>
-                    <a href="">PLAY NOW</a>
-                </div>
-            </li>
-            <li>
-                <div><a href="">
-                        <img src="https://casinowebsites.in/wp-content/uploads/2020/02/Leovegas.jpg" alt="leo-vegas">
-                    </a>
-                </div>
-                <div>
-                    <span class="list-promo">100% up to</span>
-                    <span class="list-bonus">₹80,000</span>
-                    <span class="list-spins">Multiple Bonuses!</span>
-                </div>
-                <div>
-                    <span>⍟5.0</span>
-                    <span><a href="">Read Review</a></span>
-                    <span>18+, T&C applies</span>
-                </div>
-                <div>
-                    <a href="">PLAY NOW</a>
-                </div>
-            </li>
-            <li>
-                <div><a href="">
-                        <img src="https://casinowebsites.in/wp-content/uploads/2020/02/Leovegas.jpg" alt="leo-vegas">
-                    </a>
-                </div>
-                <div>
-                    <span class="list-promo">100% up to</span>
-                    <span class="list-bonus">₹80,000</span>
-                    <span class="list-spins">Multiple Bonuses!</span>
-                </div>
-                <div>
-                    <span>⍟5.0</span>
-                    <span><a href="">Read Review</a></span>
-                    <span>18+, T&C applies</span>
-                </div>
-                <div>
-                    <a href="">PLAY NOW</a>
-                </div>
-            </li>
-            <li>
-                <div><a href="">
-                        <img src="https://casinowebsites.in/wp-content/uploads/2020/02/Leovegas.jpg" alt="leo-vegas">
-                    </a>
-                </div>
-                <div>
-                    <span class="list-promo">100% up to</span>
-                    <span class="list-bonus">₹80,000</span>
-                    <span class="list-spins">Multiple Bonuses!</span>
-                </div>
-                <div>
-                    <span>⍟5.0</span>
-                    <span><a href="">Read Review</a></span>
-                    <span>18+, T&C applies</span>
-                </div>
-                <div>
-                    <a href="">PLAY NOW</a>
-                </div>
-            </li>
-        </ol>
+  </head>
+  <body>
+    <div class="casino-item">
+      <span class="ribbon">1</span>
+      <img
+        class="casino-list-image"
+        src="https://casinowebsites.in/wp-content/uploads/2020/02/Leovegas.jpg"
+      />
+      <h3 class="casino-list-title">
+        Leo Vegas
+      </h3>
+      <span class="casino-list-rating">5.0/5</span><span>💳</span><br />
+      <span class="casino-list-promo-title">Promo</span><br />
+      <p class="casino-list-promo-value">
+        Promo variable
+      </p>
+      <span class="casino-list-promo-title">Promo</span><br />
+      <p class="casino-list-promo-value">
+        Promo variable
+      </p>
+      <a href="google.com" class="casino-list-play">Play</a><br />
+      <a href="google.com" class="casino-list-review">Read review </a>
     </div>
-</body>
-<style>
-    .casino-list-holder {
-        display: flex;
-        flex-direction: column;
-    }
 
-    @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+    <style>
+        .casino-item{
+          padding:10px 15px;
 
-    .casino-list-holder ol {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-        counter-reset: list-numbers;
-        flex-direction: column;
-    }
+        }
 
-    .casino-list-holder ol li {
-        background-color: aquamarine;
-        display: flex;
-        width: 50%;
-        font-size: 1rem;
-        margin-bottom: 1%;
-        counter-increment: list-numbers;
-        border-radius: 5px;
-        justify-content: space-between;
-    }
+        .casino-list-image{
+          width:100px;
+          height:100px;
+          border-radius:50%;
+          box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+        }
 
-    .casino-list-holder ol li::before {
-        content: counter(list-numbers);
-        font-weight: 900;
-        font-size: 3rem;
-        align-self: center;
-        width: 3rem;
-        text-align: center;
-    }
+        .casino-list-title{
+          color:white;
+          font-size:18px !important;
+        }
 
-    .list-promo {
-        font-size: 1.2rem;
-    }
+        .casino-list-rating{
+          font-size:12px;
+          color:white;
 
-    .list-bonus {
-        font-size: 2.5rem;
-        font-weight: bold;
-    }
+        }
 
-    .list-spins {
-        font-size: 1.2rem;
-    }
-</style>
+        .casino-list-promo-title{
+          color:white;
+          text-transform:uppercase;
+          font-weight:bold;
+          font-size:12px;
+          text-align:left;
+        }
 
+        .casino-list-promo-value{
+         font-size:12px !important;
+          color:white;
+        }
+
+        .casino-list-play{
+          background-color:#22B573;
+          color:white;
+          padding: 0.3em 1em;
+          border-radius:5px;
+          font-size:1.4rem;
+        }
+
+        .casino-list-review{
+          font-size:14px;
+        }
+
+        .ribbon{
+          color:white;
+          font-weight:bold;
+          font-size:1rem;
+          position:absolute;
+          top:0;
+          left:230px;
+          background-color:orange;
+          width:50px;
+          text-aling:center;
+        }
+
+        .ribbon:before{
+          content: "";
+          position: absolute;
+          z-index: 10;
+          left: 0px;
+          top: 26px;
+          width:10px;
+          border-left: 20px solid orange;
+          border-right: 20px solid orange;
+          border-bottom: 20px solid transparent;
+        }
+      }
+    </style>
+  </body>
 </html>
