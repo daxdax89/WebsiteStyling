@@ -1,31 +1,56 @@
+/* Scrollbar customization */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fafafa;
+}
+
+::-webkit-scrollbar-track:hover{
+	background:#22B573;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #22B573;
+	border-radius:5px;
+	border:2px solid #fafafa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
 /* Typography Styling */
-p,
-li {
+p,li {
   font-size: 1rem !important;
   font-weight: 400;
-  /*   margin-top: 0; */
   margin-bottom: 0.8rem;
-  background-color: transparent;
+  background-color:transparent;
 }
 
 h1 {
   font-size: 2.1rem !important;
-  font-weight: bold;
+  font-weight:bold;
 }
 
 h2 {
   font-size: 1.6rem !important;
-  font-weight: bold;
+  font-weight:bold;
 }
 
 h3 {
   font-size: 1.35rem !important;
-  font-weight: bold;
+  font-weight:bold;
 }
 
 h4 {
   font-size: 1.1rem !important;
-  font-weight: bold;
+  font-weight:bold;
 }
 
 h5 {
@@ -37,8 +62,8 @@ h6 {
 }
 
 /* Global Styling */
-blockquote {
-  border-color: #f98e58;
+blockquote{
+  border-color:#F98E58;
 }
 
 .border-bottom-style {
@@ -80,12 +105,12 @@ sup {
   margin-top: 1%;
 }
 
-table {
+table{
   border: 1px lightgray;
-  border-top: 0;
+  border-top:0;
   border-radius: 5px;
-  margin-bottom: 2%;
-  font-size: 1rem;
+  margin-bottom:2%;
+  font-size:1rem;
 }
 
 table th {
@@ -94,25 +119,25 @@ table th {
   font-weight: bold !important;
 }
 
-.entry-title {
-  line-height: 1.1em;
+.entry-title{
+  line-height:1.1em;
 }
 
 /* Popup Styling */
-#popmake-23301 {
-  padding: 0;
-  border-radius: 5px;
-  border-color: white;
+#popmake-23301{
+  padding:0;
+  border-radius:5px;
+  border-color:white;
 }
 
-#popmake-23301 img {
-  width: 100%;
+#popmake-23301 img{
+  width:100%;
 }
 
 /* Blog Height Fixes */
 
-.category-23 article {
-  height: 610px;
+.category-23 article{
+  height:610px;
 }
 /* Grid Title Fix */
 
@@ -187,23 +212,26 @@ table th {
 
 /* Casino of the Month Sticky Bar Styling */
 
-#sticky-bar-review .et_pb_row_47 {
-  display: flex;
-  justify-content: space-evenly;
+#sticky-bar-review .et_pb_row_47{
+  display:flex;
 }
 
-#sticky-bar-review .et_pb_column {
-  align-self: center;
+#sticky-bar-review .et_pb_column{
+  align-self:center;
 }
 
-#sticky-bar-review .et_pb_row_47 .et_pb_module {
-  align-self: center;
+#sticky-bar-review .et_pb_row_47 .et_pb_module{
+  align-self:center;
 }
 
-.sticky-text p {
+.sticky-text span{
   font-weight: bold;
   color: #f98e58;
-  margin-bottom: 0;
+  margin-bottom:0;
+}
+
+.sticky-text{
+  font-size:20px;
 }
 
 .com-mobile-holder {
@@ -274,6 +302,8 @@ table th {
 /***** Button Styling *****/
 .primary-cta {
   background-color: rgba(34, 181, 115, 1);
+	color:white;
+	border-color:rgba(34, 181, 115, 1);
 }
 
 .primary-cta-html {
@@ -283,9 +313,9 @@ table th {
   line-height: 1.7em;
   text-align: center;
   font-size: 25px !important;
-  padding: 0.3em 1em;
-  color: white;
-  text-transform: uppercase;
+  padding: .3em 1em;
+  color:white;
+  text-transform:uppercase;
 }
 
 .primary-cta:hover {
@@ -357,7 +387,7 @@ table th {
   background-color: #fafafa !important;
   border-radius: 5px !important;
   display: flex !important;
-}
+  }
 
 .casino-review:hover {
   box-shadow: 0px 12px 18px -10px rgba(0, 0, 0, 0.3);
@@ -387,8 +417,8 @@ table th {
   align-self: center !important;
 }
 
-.casino-review p {
-  margin-bottom: 0;
+.casino-review p{
+  margin-bottom:0;
 }
 
 .list-review-text {
@@ -408,7 +438,7 @@ table th {
   background-color: #35454c !important;
   padding: 0.3em 1em !important;
   border-radius: 5px;
-  font-size: 0.8rem;
+  font-size:0.8rem;
 }
 
 .list-review-text:hover {
@@ -422,7 +452,7 @@ table th {
 }
 
 .list-review-code .list-star-score {
-  /*   line-height: 40px !important; */
+/*   line-height: 40px !important; */
 }
 
 .list-star {
@@ -437,216 +467,222 @@ table th {
 }
 
 .casino-review .et_pb_image:before {
-  position: absolute;
-  left: 22px;
-  top: 50%;
-  font-size: 30px;
-  font-weight: bold;
-  color: #1a1a1a;
+  position:absolute;
+  left:22px;
+  top:50%;
+  font-size:30px;
+  font-weight:bold;
+  color:#1a1a1a;
 }
 
-.casino-review .et_pb_column:nth-child(4) .et_pb_button {
-  background-color: rgba(34, 181, 115, 1) !important;
+.casino-review .et_pb_column:nth-child(4) .et_pb_button{
+  background-color: rgba(34,181,115, 1.0) !important;
 }
 
-.casino-review .et_pb_column:nth-child(4) .et_pb_button:hover {
-  background-color: rgba(34, 181, 115, 0.8) !important;
+.casino-review .et_pb_column:nth-child(4) .et_pb_button:hover{
+  background-color: rgba(34,181,115, 0.8) !important;
 }
 
 /* Casino Number Fix */
-.content-fix:before {
-  left: -40px !important;
+.content-fix:before{
+  left:-40px !important;
 }
 
 .casino-review:nth-child(1) .et_pb_image:before {
-  content: "1";
+  content:"1";
 }
 
 .casino-review:nth-child(2) .et_pb_image:before {
-  content: "2";
+  content:"2";
 }
 
 .casino-review:nth-child(3) .et_pb_image:before {
-  content: "3";
+  content:"3";
 }
 
 .casino-review:nth-child(4) .et_pb_image:before {
-  content: "4";
+  content:"4";
 }
 
 .casino-review:nth-child(5) .et_pb_image:before {
-  content: "5";
+  content:"5";
 }
 
 .casino-review:nth-child(6) .et_pb_image:before {
-  content: "6";
+  content:"6";
 }
 
 .casino-review:nth-child(7) .et_pb_image:before {
-  content: "7";
+  content:"7";
 }
 
 .casino-review:nth-child(8) .et_pb_image:before {
-  content: "8";
+  content:"8";
 }
 
 .casino-review:nth-child(9) .et_pb_image:before {
-  content: "9";
+  content:"9";
 }
 
 .casino-review:nth-child(10) .et_pb_image:before {
-  content: "10";
-  left: 10px;
+  content:"10";
+  left:10px;
 }
 
 .casino-review:nth-child(11) .et_pb_image:before {
-  content: "11";
-  left: 10px;
+  content:"11";
+  left:10px;
 }
 
 .casino-review:nth-child(12) .et_pb_image:before {
-  content: "12";
-  left: 10px;
+  content:"12";
+  left:10px;
 }
+
 
 .casino-review:nth-child(13) .et_pb_image:before {
-  content: "13";
-  left: 10px;
+  content:"13";
+  left:10px;
 }
+
 
 .casino-review:nth-child(14) .et_pb_image:before {
-  content: "14";
-  left: 10px;
+  content:"14";
+  left:10px;
 }
+
 
 .casino-review:nth-child(15) .et_pb_image:before {
-  content: "15";
-  left: 10px;
+  content:"15";
+  left:10px;
 }
+
 
 .casino-review:nth-child(16) .et_pb_image:before {
-  content: "16";
-  left: 10px;
+  content:"16";
+  left:10px;
 }
+
 
 .casino-review:nth-child(17) .et_pb_image:before {
-  content: "17";
-  left: 10px;
+  content:"17";
+  left:10px;
 }
 
+
 .casino-review:nth-child(18) .et_pb_image:before {
-  content: "18";
-  left: 10px;
+  content:"18";
+  left:10px;
 }
 
 .casino-review:nth-child(19) .et_pb_image:before {
-  content: "19";
-  left: 10px;
+  content:"19";
+  left:10px;
 }
 
 .casino-review:nth-child(20) .et_pb_image:before {
-  content: "20";
-  left: 10px;
+  content:"20";
+  left:10px;
 }
 
 .casino-review:nth-child(21) .et_pb_image:before {
-  content: "21";
-  left: 10px;
+  content:"21";
+  left:10px;
 }
 
 .casino-review:nth-child(22) .et_pb_image:before {
-  content: "22";
-  left: 10px;
+  content:"22";
+  left:10px;
 }
 
 .casino-review:nth-child(23) .et_pb_image:before {
-  content: "23";
-  left: 10px;
+  content:"23";
+  left:10px;
 }
 
 .casino-review:nth-child(24) .et_pb_image:before {
-  content: "24";
-  left: 10px;
+  content:"24";
+  left:10px;
 }
 
 .casino-review:nth-child(25) .et_pb_image:before {
-  content: "25";
-  left: 10px;
+  content:"25";
+  left:10px;
 }
 
 .casino-review:nth-child(26) .et_pb_image:before {
-  content: "26";
-  left: 10px;
+  content:"26";
+  left:10px;
 }
 
 .casino-review:nth-child(27) .et_pb_image:before {
-  content: "27";
-  left: 10px;
+  content:"27";
+  left:10px;
 }
 
 .casino-review:nth-child(28) .et_pb_image:before {
-  content: "28";
-  left: 10px;
+  content:"28";
+  left:10px;
 }
 
 .casino-review:nth-child(29) .et_pb_image:before {
-  content: "29";
-  left: 10px;
+  content:"29";
+  left:10px;
 }
 
 .casino-review:nth-child(30) .et_pb_image:before {
-  content: "30";
-  left: 10px;
+  content:"30";
+  left:10px;
 }
 
 .casino-review:nth-child(31) .et_pb_image:before {
-  content: "31";
-  left: 10px;
+  content:"31";
+  left:10px;
 }
 
 .casino-review:nth-child(32) .et_pb_image:before {
-  content: "32";
-  left: 10px;
+  content:"32";
+  left:10px;
 }
 
 .casino-review:nth-child(33) .et_pb_image:before {
-  content: "33";
-  left: 10px;
+  content:"33";
+  left:10px;
 }
 
 .casino-review:nth-child(34) .et_pb_image:before {
-  content: "34";
-  left: 10px;
+  content:"34";
+  left:10px;
 }
 
 .casino-review:nth-child(35) .et_pb_image:before {
-  content: "35";
-  left: 10px;
+  content:"35";
+  left:10px;
 }
 
 .casino-review:nth-child(36) .et_pb_image:before {
-  content: "36";
-  left: 10px;
+  content:"36";
+  left:10px;
 }
 
 .casino-review:nth-child(37) .et_pb_image:before {
-  content: "37";
-  left: 10px;
+  content:"37";
+  left:10px;
 }
 
 .casino-review:nth-child(38) .et_pb_image:before {
-  content: "38";
-  left: 10px;
+  content:"38";
+  left:10px;
 }
 
 .casino-review:nth-child(39) .et_pb_image:before {
-  content: "39";
-  left: 10px;
+  content:"39";
+  left:10px;
 }
 
 .casino-review:nth-child(40) .et_pb_image:before {
-  content: "40";
-  left: 10px;
+  content:"40";
+  left:10px;
 }
 
 /* Slot Review Banner Styling */
@@ -683,9 +719,10 @@ table th {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
+/*post content height issue fix*/
 .post-content-inner {
-  height: 200px;
+height: auto;  
+min-height: 200px;
 }
 
 /* * Accordion */
@@ -761,6 +798,10 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--small {
   height: 150px;
 }
 
+input[name="panel"]:checked ~ .accordion__content.accordion__content--smallplus {
+  height: 175px;
+}
+
 input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
   height: 200px;
 }
@@ -773,6 +814,14 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--larger {
 
 input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
   height: 500px;
+}
+
+input[name="panel"]:checked ~ .accordion__content.accordion__content--extralarge {
+  height: 600px;
+}
+
+input[name="panel"]:checked ~ .accordion__content.accordion__content--extrahuge {
+  height: 700px;
 }
 
 .accordion__content ul {
@@ -818,11 +867,11 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
   overflow: visible !important;
 }
 
-.review-text .et_pb_code_inner {
-  padding: 5px 15px;
-  background-color: #35454c;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+.review-text .et_pb_code_inner{
+  padding:5px 15px;
+  background-color:#35454c;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
 }
 
 .review-text .left-review {
@@ -875,8 +924,8 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
   font-size: 30px;
 }
 
-.review-quick-facts {
-  background-color: #f98e58;
+.review-quick-facts{
+  background-color:#F98E58;
 }
 
 /* Normal List Styling */
@@ -884,41 +933,56 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
   font-weight: 400 !important;
 }
 
-.list-icons-check ul {
-  margin-left: 20px;
-}
-
 .list-icons li:before {
+  font-family:dashicons;
   list-style-type: circle;
-  content: "\2717";
+  content:"\f158";
   margin: 0 5px 0 -15px;
-  color: #c1272d !important;
+  color: #f98e58;
 }
 
 .list-icons-check li:before {
+  font-family:dashicons;
   list-style-type: circle;
-  content: "\2713";
+  content:"\f147";
   margin: 0 5px 0 -15px;
-  color: #22b573;
-  font-size: 16px;
+  color: #f98e58;
 }
 
 .list-icons-chevron li:before {
+  font-family:dashicons;
   list-style-type: circle;
-  content: "\2BC8";
+  content:"\f345";
   margin: 0 5px 0 -15px;
-  color: #22b573;
-  height: 16px !important;
+  color: #22B573;
 }
 
 /* Sticky Bar Styling */
+
+.sticky-bar-review{
+  padding-top:0px !important;
+  padding-bottom:0px !important;
+}
+
+.sticky-bar-review .et_pb_row{
+  padding-top:5px !important;
+  padding-bottom:5px !important;
+}
+
+.sticky-bar-review .sticky-row{
+  display:flex;
+  justify-content:space-around;
+}
+
+.sticky-bar-review .sticky-row .et_pb_column{
+  align-self:center;
+}
 
 .sticky-text {
   font-size: 20px;
   text-transform: uppercase;
   color: #f98e58;
   text-align: center;
-  font-weight: bold;
 }
 
 .sticky-promo {
@@ -940,7 +1004,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
 
 /* Top 4 Section Styling */
 
-.top4-section .et_pb_column .et_pb_image_wrap {
+.top4-section .et_pb_column .et_pb_image_wrap{
   margin-bottom: -7px;
 }
 
@@ -968,7 +1032,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
   color: #f98e58;
   font-size: 40px;
   font-weight: bold;
-  line-height: 1em !important;
+  line-height:1em !important;
 }
 
 .banner-spins {
@@ -1030,7 +1094,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
 }
 
 .list-icons-chevron ul {
-  margin-left: 20px;
+/*   margin-left: 20px; */
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -1072,9 +1136,55 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
     margin-right: 30px;
   }
 }
-
+/*Add space before sidebar list first item*/
+ul.review-sidebar-list li:first-child{ padding-top: 0.8rem;}
 /*** Responsive Styles Tablet And Below ***/
 @media all and (max-width: 980px) {
+  .banner-title{
+    line-height:1em;
+  }
+  /*Casino List*/
+  .promo {
+  display: block;
+}
+
+.bonus {
+  display: block;
+}
+
+.bonus-mini {
+  display: block;
+}
+  /*Remove margin for mobile*/
+  p.casinopaymenticons{margin-top:40px;padding-bottom:8px !important;}
+  /*Remove Padding from content*/
+  #casino-review-content{padding: 0px;}
+  /*Fix h3 line spacing */
+  h1{line-height: 35px !important;}
+  h2{line-height: 25px !important;}
+  h3{line-height: 25px !important;}
+  /*Width 96% set for mobile*/
+  .et_pb_row{width: 96% !important;}
+  /*Remove space from side menu list*/
+  ul.review-sidebar-list{padding-bottom:0px !important;}
+  
+/*  Top 4 Column Tweaks */
+  .top4-section{
+    margin:0;
+    display:flex;
+    max-width:100% !important;
+    width:100% !important;
+    justify-content:space-evenly;
+  }
+  
+  .top4-section .et_pb_column{
+    width:48% !important;
+    margin:1% !important; 
+  }
+  
+  .banner-promo, .banner-spins{
+    font-size:1rem;
+  }
 }
 /*** Responsive Styles Tablet Only ***/
 @media all and (min-width: 768px) and (max-width: 980px) {
@@ -1091,30 +1201,33 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
 }
 /*** Responsive Styles Smartphone Only ***/
 @media all and (max-width: 767px) {
+  
+  /*Fix spacing issue in review header*/
+  span.review-banner-promo{margin-top: 60px;}
   h1 {
-    font-size: calc(2.5rem * 0.8) !important;
+    font-size: calc(2.1rem * 0.8) !important;
   }
 
   h2 {
-    font-size: calc(2rem * 0.8) !important;
+    font-size: calc(1.6rem * 0.8) !important;
   }
 
   h3 {
-    font-size: calc(1.75rem * 0.8) !important;
+    font-size: calc(1.35rem * 0.8) !important;
   }
 
   h4 {
-    font-size: calc(1.5rem * 0.8) !important;
+    font-size: calc(1.1rem * 0.8) !important;
   }
 
   h5 {
-    font-size: calc(1.25rem * 0.8) !important;
+    font-size: calc(1.05rem * 0.8) !important;
   }
 
   h6 {
     font-size: calc(1rem * 0.8) !important;
   }
-
+    
   .main-menu-item {
     display: none;
   }
@@ -1157,8 +1270,8 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
     margin: 0;
   }
 
-  /* 	Casino Review Mobile */
-
+  /*  Casino Review Mobile */
+  
   .casino-review {
     margin-bottom: 30px !important;
   }
@@ -1168,12 +1281,12 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
   }
 
   .casino-review .et_pb_column:nth-child(1) .et_pb_image {
-    margin-left: 0 !important;
+    margin-left:0 !important;
   }
-
+  
   .casino-review .et_pb_image:before {
-    display: none;
-  }
+  display:none;
+}
 
   .casino-review .et_pb_button {
     width: 100%;
@@ -1196,3 +1309,109 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--huge {
 /*** Responsive Styles Smartphone Portrait ***/
 @media all and (max-width: 479px) {
 }
+
+/*** Responsive style for Play game list to make image and text side by side and button bottom ***/
+@media screen and (max-width:980px){
+  div[class*="et_pb_row_"].et_pb_row.casino-review{margin:0 !important;width:96% !important;margin-left: 2% !important;margin-bottom: 10px !important;}
+.casino-review > div:nth-child(1){order:1;margin-bottom: 10px !important;width:50% !important;margin-right:0 !important;}
+.casino-review > div.et_pb_column:nth-child(2){order:2;margin-bottom:10px !important;align-self: flex-start !important;width:50% !important;}
+.casino-review > div:nth-child(3){order:4;width:100% !important;margin:0 !important;}
+.casino-review > div:nth-child(4){order:3;width:100% !important;}
+.casino-review > div:nth-child(4) *{width:100%;}
+.casino-review > div:nth-child(3) .et_pb_code_inner br, .casino-review > div:nth-child(3) .et_pb_code_inner a{display:none}
+.casino-review > div:nth-child(3) .et_pb_code_inner .list-star-score{width: 50%;position: absolute;right: 0;top: -100px;}
+.casino-review:nth-child(3) .et_pb_image:before{content:"";display:none}
+body #page-container .et_pb_section .casino-review > div:nth-child(4) a[class*="et_pb_button_"]{font-size:30px !important;height:50px !important;line-height: 50px !important;padding:0 !important;border-radius:0 !important;}
+.casino-review .et_pb_column:nth-child(1) .et_pb_image_wrap img{min-height:120px;}
+.et_pb_section.et_pb_section_3.et_section_regular{margin-top:30px !important;}
+div.et_pb_text_inner br{display: none;}
+/*div.et_pb_text_inner span{display: block;}*/
+  
+  /*Responsie Table*/
+tr:nth-child(even) {background: #F98E58;color:#FFF !important}
+tr:nth-child(even) a {background: #F98E58;color:#FFF !important}
+tr:nth-child(even) strong {background: #F98E58;color:#FFF !important}
+tr:nth-child(odd) {background: #FFF}
+  tbody tr:first-child {
+    display: none;
+  }
+  td, th {
+    display: block;
+    clear: both;
+  }
+  td[texttilte]:before {
+    content: attr(texttilte) ": ";
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+  }
+  td{width: 100% !important}
+  /* remove + from faq*/  
+  .accordion label:after{display: none}
+/*Review span text fixes*/
+  span.review-banner-promo,span.review-banner-bonus,span.review-banner-spins{display: block;}
+
+}
+@media screen and (max-width:500px){
+  .mobilefullwidth{}
+div.et_pb_text_inner span.spins{font-size: 14px;margin-top: 3px;}
+div.et_pb_text_inner span.promo{margin-bottom: 3px;}
+span.list-star-score{display: none}
+div.et_pb_image_sticky img{min-height: auto !important}
+}
+/* Top menu css from plugin*/
+.nsmheaderlinks{width:100%; display: flex; align-items: center; justify-content: center;}
+@media screen and (max-width:767px){
+  .nsmheaderlinks{display: none}
+}
+/* add space between heading text and bottom line  */
+h1.border-bottom-style,h2.border-bottom-style{padding-bottom:5px;}
+/* Sticky bar fix */
+@media screen and (max-width: 980px) and (min-width: 767px) {
+  #sticky-bar-review .et_pb_gutters1{display: flex;direction: ltr;}
+  #sticky-bar-review .et_pb_gutters1 p{ font-size:12px;}
+  #sticky-bar-review .et_pb_gutters1 span{display:inline-block}
+  #sticky-bar-review .et_pb_gutters1 span.sticky-promo{display:block}
+}
+.lineheight25{
+line-height: 25px;
+}
+/*Faq height*/
+input[name="panel"]:checked~.accordion__content.accordion__content--extrasmall{height:auto;min-height:auto}
+input[name="panel"]:checked~.accordion__content.accordion__content--small{height:auto;min-height:auto}
+input[name="panel"]:checked~.accordion__content.accordion__content--smallplus{height:auto;min-height:auto}
+input[name="panel"]:checked~.accordion__content.accordion__content--med{height:auto;min-height:auto}
+input[name="panel"]:checked~.accordion__content.accordion__content--large{height:auto;min-height:auto}
+input[name="panel"]:checked~.accordion__content.accordion__content--larger{height:auto;min-height:auto}
+input[name="panel"]:checked~.accordion__content.accordion__content--huge{height:auto;min-height:auto}
+input[name="panel"]:checked~.accordion__content.accordion__content--extralarge{height:auto;min-height:auto}
+input[name="panel"]:checked~.accordion__content.accordion__content--extrahuge{height:auto;min-height:auto}
+input[name="panel"]:checked~.accordion__content.accordion__content--autoheight{height:auto;min-height:auto}
+/*make sure website is in format not different width*/
+.et_pb_row_56_tb_body,.et_pb_row_15_tb_body{width: 96% !important}
+/*casino reviews fix */
+@media all and (min-width: 981px) 
+{
+  .casino-review div:nth-child(2) {
+    margin-left: 2.75%;
+    margin-right: 2.75%;
+  }
+}
+/*Give Auto height to content*/
+.autoheight{height !important:auto; min-height:auto !important;}
+
+/*Make Play button full*/
+div.review-schema-stars + div a.et_pb_button,div.review-schema-stars + div a.et_pb_button:hover{padding-bottom: 25px !important;padding-top: 20px !important;}
+/*move list to start of page on moble view*/
+@media all and (max-width: 500px) {
+  .et_pb_text_32 ul, ul{ padding-left: 15px !important; }
+}
+/*FAQS h3 fix*/
+.accordion label h3{display:contents}
+/*Games and payment icons*/
+p.casinopaymenticons{margin-top:40px;}
+p.casinopaymenticons,p.casinogamesicons{text-align:center;padding-top: 5px !important;padding-bottom: 0px; margin-bottom: 0px;}
+p.casinopaymenticons img,p.casinogamesicons img{padding:0px 4px 0px 4px;
+margin-bottom: 4px;}
+/*review banner Title*/
+.review-banner-strong{display:block;font-size:22px;color:#fff;padding-bottom:10px;text-align:center}
